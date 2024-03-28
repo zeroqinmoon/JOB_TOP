@@ -1,0 +1,36 @@
+Relatório de Desenvolvimento do Site de Classificados de Empregos "JOB_TOP"
+
+Introdução:
+Este relatório oferece uma visão abrangente do processo de desenvolvimento do site de classificados de empregos "JOB_TOP", desde a concepção até a implementação final. A equipe foi composta por três integrantes, cada um responsável por diferentes aspectos do projeto: código HTML, código CSS e imagens.
+
+Equipe de Desenvolvimento:
+- Responsável pelo Código HTML: Rodrigo
+- Responsável pelo Código CSS e JavaScript: Felipe
+- Responsável pelas Imagens, Analise das modificacoes do modelo e Sugestao de melhorias do website: Debora
+
+Fase de Planejamento:
+Durante esta fase, foram estabelecidos os objetivos do projeto, identificados os requisitos e delineado o escopo. Foram realizadas reuniões para discutir as funcionalidades desejadas, o design e garantir um entendimento comum entre os membros da equipe.
+
+Design e Layout:
+- Rodrigo, Felipe e Debora trabalharam em estreita colaboração para garantir que o design do site fosse atrativo e funcional. Eles refinaram o layout, selecionaram cores e fontes adequadas e escolheram imagens relevantes para criar uma experiência de usuário envolvente.
+- A usabilidade foi uma consideração-chave durante o processo de design. A equipe se concentrou em tornar a navegação intuitiva, os formulários fáceis de preencher e as páginas de detalhes de emprego informativas e acessíveis.
+
+Desenvolvimento do Código:
+- Rodrigo foi responsável por desenvolver o código HTML e Felipe o JavaScript, assim garantindo a funcionalidade do site. Eles implementaram recursos interativos, como validação de formulários e animações, para melhorar a experiência do usuário.
+- Felipe utilizou CSS para estilizar o site e torná-lo visualmente atraente. Ele se concentrou em criar um design responsivo, garantindo que o site fosse adaptável a diferentes dispositivos e tamanhos de tela.
+- Durante a ausência temporária de Rodrigo, Felipe e Debora colaboraram para revisar e aprimorar o código existente. Eles realizaram testes extensivos para identificar e corrigir quaisquer problemas de usabilidade e desempenho.
+
+Funcionamento do Website:
+1. Gerenciamento de Contratos: Os usuários podem criar solicitacoes nos formulario para acessar recursos exclusivos, como solicitar a criacao de uma pagina de empregos, alem da comunicacao com alertas de emprego.
+2. Páginas de Categoria: O site oferece páginas dedicadas a diferentes categorias de empregos, facilitando a navegação e a pesquisa de oportunidades específicas.
+3. Ferramentas de Compartilhamento: Os usuários podem compartilhar empregos interessantes em suas redes sociais, ampliando o alcance das oportunidades.(So falta vincular o link e criar o codigo de automacao)
+4. Sistema de Avaliação: Os empregadores podem ser avaliados pelos candidatos, proporcionando transparência e ajudando outros profissionais a tomar decisões informadas sobre oportunidades de emprego.(atraves do formulario da pagina contato)
+
+Colaboração e Comunicação:
+Durante todo o processo de desenvolvimento, a equipe manteve uma comunicação aberta e colaborativa. Reuniões regulares e o uso de ferramentas de mensagens online garantiram que todos estivessem alinhados com os objetivos do projeto e pudessem resolver problemas de forma eficiente. Alem da comunicacao em sala de aula.
+
+Testes e Ajustes:
+Após o desenvolvimento inicial, foram realizados testes rigorosos em diferentes navegadores e dispositivos para garantir a funcionalidade e compatibilidade do site. A equipe realizou ajustes conforme necessário para garantir uma experiência de usuário consistente e livre de erros.
+
+Conclusão:
+O site de classificados de empregos "JOB_TOP" representa o resultado do trabalho colaborativo e dedicado da equipe de desenvolvimento. Com um design atraente, funcionalidades robustas e usabilidade aprimorada, o site está praticamente funcional (porem, nao finalizado) e quase pronto para ser lançado e poder ajudar profissionais a encontrar oportunidades de emprego adequadas às suas habilidades e interesses.

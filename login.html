@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login_config.css">
+    <title>Job Top - Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    
+    <div class="login-card">
+        <h2>Conecte-se</h2>
+        <h3>Digite suas credenciais</h3>
+
+        <form class="login-form" id="loginForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <a href="lost_password.html" id="forgotPassword">Esqueça sua senha?</a>
+            <button type="submit" formaction="index.html" id="loginButton">CONECTE-SE</button>
+        </form>
+        
+        <script>
+            // Função para o evento onFocus (quando o campo recebe o foco)
+            document.getElementById('username').addEventListener('focus', function() {
+                // Altera a cor de fundo quando o campo recebe foco
+                this.style.backgroundColor = 'lightblue';
+            });
+
+            // Função para o evento onBlur (quando o campo perde o foco)
+            document.getElementById('username').addEventListener('blur', function() {
+                // Restaura a cor de fundo original quando o campo perde foco
+                this.style.backgroundColor = '';
+            });
+
+            // Função para o evento onFocus (quando o campo recebe o foco)
+            document.getElementById('password').addEventListener('focus', function() {
+                // Altera a cor de fundo quando o campo recebe foco
+                this.style.backgroundColor = 'lightblue';
+            });
+
+            // Função para o evento onBlur (quando o campo perde o foco)
+            document.getElementById('password').addEventListener('blur', function() {
+                // Restaura a cor de fundo original quando o campo perde foco
+                this.style.backgroundColor = '';
+            });
+
+            // Função para o evento de clique no botão "CONECTE-SE"
+            document.getElementById('loginButton').addEventListener('click', function(event) {
+                // Verificar se o nome de usuário contém "@gmail.com"
+                var username = document.getElementById('username').value;
+                if (username.indexOf('@gmail.com') === -1) {
+                    alert('Por favor, insira um endereço de e-mail do Gmail válido.');
+                    event.preventDefault(); // Impedir o envio do formulário
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+Foi solicitado para que criassemos um site com o tema de Classificados de empregos, nos deram como referencia o website da infoJobs, Linkedin entre outros da mesma caracteristca.
+Demos o nome de JOB TOP, criativo não?
+
+============== Objetivo: ==================
+Desenvolver um site de classificados de empregos que permita aos usuários procurar e anunciar oportunidades de emprego de forma fácil e eficiente. O site deve oferecer uma experiência intuitiva e amigável tanto para os candidatos em busca de emprego quanto para os empregadores que desejam contratar.
+
+Público-alvo:
+Profissionais em busca de emprego e empresas que desejam recrutar novos talentos.
+
+============= Design e Layout: ================= 
+
+Paleta de Cores: Utilizar cores que transmitam profissionalismo e confiabilidade, como tons de azul, cinza e branco.
+Layout Responsivo: Criar um design responsivo que se adapte a diferentes dispositivos, como computadores, tablets e smartphones.
+Navegação Intuitiva: Ter um menu de navegação claro e organizado, com categorias de empregos bem definidas (por setor, localização, tipo de emprego, etc.).
+Barra de Busca: Incluir uma barra de busca visível e de fácil acesso para que os usuários possam pesquisar vagas por palavras-chave, localização, etc.
+Recursos Principais:
+
+Painel de Controle dos usuarios :
+
+Registro de conta de usuário.
+Upload de currículo e informações pessoais.
+Visualização de vagas, candidaturas e histórico de buscas.
+Publicação e edição de vagas de emprego.
+Gerenciamento de candidaturas recebidas.
+
+============ Filtros Avançados: ================= 
+
+Filtros detalhados para refinar a busca por tipo de emprego, setor, localização, etc.
+
+Sistema de Avaliações:
+Permitir que candidatos avaliem empresas e vice-versa, fornecendo insights sobre a qualidade da experiência.
+
+Blog de Carreira:
+Incorporar um blog com dicas de carreira, entrevistas de sucesso, conselhos para entrevistas, etc., para aumentar o valor agregado do site.
+
+Segurança e Privacidade:
+Política de Privacidade: Disponibilizar uma política de privacidade clara que explique como os dados dos usuários serão utilizados.
+
+Pacotes de Destaque: Oferecer pacotes de destaque para empregadores que desejam que suas vagas sejam exibidas no topo das listagens por um período determinado.
+
+Anúncios Pagos: Integrar espaços para anúncios pagos relacionados a serviços de carreira, cursos de capacitação, etc.
+
+Considerações Finais:
+O site de classificados de empregos tem o objetivo de ser intuitivo, oferecer recursos valiosos para ambos os lados (candidatos e empregadores) e ser construído com foco na usabilidade e comunicação. A implementação de recursos adicionais, como um blog informativo ou uma seção de recursos para candidatos, pode ajudar a atrair e reter usuários. A manutenção contínua e atualizações regulares são essenciais para manter o site relevante e funcionando sem problemas.
