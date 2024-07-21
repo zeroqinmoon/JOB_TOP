@@ -70,7 +70,8 @@ if (isset($_GET["acao"]) && $_GET["acao"] == "login") {
         <form class="login-form" id="loginForm" action="login.php" method="get">
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="password" id="senha" name="senha" placeholder="Senha" required>
-            <a href="lost_password.html" id="forgotPassword">Esqueça sua senha?</a>
+            <a href="../lost_password.html" id="forgotPassword">Esqueça sua senha?</a>
+            <a href="cadastro.php" id="forgotPassword">NÃO tem CADASTRO?</a>
             <a href="login_painel.php" id="forgotPassword">Acesso ao Painel</a>
             <button type="submit" name="acao" value="login">LOGIN</button>
         </form>
