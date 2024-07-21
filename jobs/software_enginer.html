@@ -29,10 +29,10 @@
 
 <body>
     <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
-    <!--iniciar OInício -->
+    <!-- Cabeçalho -->
     <header>
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">
@@ -47,15 +47,15 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-7">
-                                <div class="main-menu  d-none d-lg-block">
+                                <div class="main-menu d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="../index.html">home</a></li>
                                             <li><a href="../jobs.html">Navegue pelo trabalho</a></li>
                                             <li><a href="#">Páginas<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="../candidate.html">Candidatos </a></li>
-                                                    <li><a href="../jobs.html">Vagas de Trabalho </a></li>
+                                                    <li><a href="../candidate.html">Candidatos</a></li>
+                                                    <li><a href="../jobs.html">Vagas de Trabalho</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">blog <i class="ti-angle-down"></i></a>
@@ -88,7 +88,7 @@
             </div>
         </div>
     </header>
-    <!-- Cabeçalho -->
+    <!-- /Cabeçalho -->
 
     <!-- Bradcam_area  -->
     <div class="bradcam_area bradcam_bg_1">
@@ -115,7 +115,9 @@
                                     <img src="../img/svg_icon/5.svg" alt="">
                                 </div>
                                 <div class="jobs_conetent">
-                                    <a href="#"><h4>Engenheiro de software</h4></a>
+                                    <a href="#">
+                                        <h4>Engenheiro de software</h4>
+                                    </a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p> <i class="fa fa-map-marker"></i> California, USA</p>
@@ -142,19 +144,17 @@
                         <div class="single_wrap">
                             <h4>Responsabilidade</h4>
                             <ul>
-                                <li>Os candidatos devem ter experiência nas seguintes áreas.
-                                </li>
+                                <li>Os candidatos devem ter experiência nas seguintes áreas.</li>
                                 <li>Ter um bom conhecimento de Programa Computacional.</li>
-                                <li>Habilidades com Java e Python no minimo.</li>
+                                <li>Habilidades com Java e Python no mínimo.</li>
                                 <li>Curtos Prasos.</li>
                             </ul>
                         </div>
                         <div class="single_wrap">
                             <h4>Qualificações</h4>
                             <ul>
-                                <li>Os candidatos devem ter Qualificação nas seguintes áreas.
-                                </li>
-                                <li>Programacao.</li>
+                                <li>Os candidatos devem ter Qualificação nas seguintes áreas.</li>
+                                <li>Programação.</li>
                                 <li>Trabalho em grupo.</li>
                                 <li>Gostar de Dinheiro.</li>
                             </ul>
@@ -166,43 +166,32 @@
                     </div>
                     <div class="apply_job_form white-bg">
                         <h4>Inscreva -se para o trabalho</h4>
-                        <form action="#">
+                        <form action="inscrever_trabalho.php" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="input_field">
-                                        <input type="text" placeholder="Your name">
+                                        <input type="text" name="nome" placeholder="Seu nome" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input_field">
-                                        <input type="text" placeholder="Email">
+                                        <input type="email" name="email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="input_field">
-                                        <input type="text" placeholder="Website/Portfolio link">
+                                        <input type="text" name="portfolio" placeholder="Website/Portfolio link">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                          <button type="button" id="inputGroupFileAddon03"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
-                                          </button>
-                                        </div>
-                                        <div class="custom-file">
-                                          <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
-                                          <label class="custom-file-label" for="inputGroupFile03">Upload CV</label>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="col-md-12">
                                     <div class="input_field">
-                                        <textarea name="#" id="" cols="30" rows="10" placeholder="Coverletter"></textarea>
+                                        <textarea name="coverletter" cols="30" rows="10"
+                                            placeholder="Carta de Apresentação"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="submit_btn">
-                                        <button class="boxed-btn3 w-100" type="submit">Aplique agora</button>
+                                        <button type="submit" class="boxed-btn3 w-100">Inscreva-se agora</button>
                                     </div>
                                 </div>
                             </div>
@@ -216,11 +205,11 @@
                         </div>
                         <div class="job_content">
                             <ul>
-                                <li>publicado em: <span> 12 de novembro de 2019</span></li>
+                                <li>Publicado em: <span>12 de novembro de 2019</span></li>
                                 <li>Vaga: <span>13</span></li>
                                 <li>Salário: <span>40k - 520k/ano</span></li>
                                 <li>Localização: <span>California, USA</span></li>
-                                <li>Natureza do trabalho: <span> Tempo total</span></li>
+                                <li>Natureza do trabalho: <span>Tempo total</span></li>
                             </ul>
                         </div>
                     </div>
@@ -232,9 +221,6 @@
                             <li><a href="#"> <i class="fa fa-twitter"></i></a> </li>
                             <li><a href="#"> <i class="fa fa-envelope"></i></a> </li>
                         </ul>
-                    </div>
-                    <div class="job_location_wrap">
-                        <div class="job_lok_inner">
                     </div>
                 </div>
             </div>
@@ -260,63 +246,39 @@
                             </p>
                             <div class="socail_links">
                                 <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-google-plus"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </div>
-  
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
-                            <h3 class="footer_title">
-                                Empresa
-                            </h3>
+                            <h3 class="footer_title">Empresa</h3>
                             <ul>
-                                <li><a href="../index.html">Sobre </a></li>
-                                <li><a href="../jobs.html"> Trabalhos</a></li>
-                                <li><a href="../candidate.html">Candidatos/a></li>
+                                <li><a href="../index.html">Sobre</a></li>
+                                <li><a href="../jobs.html">Trabalhos</a></li>
+                                <li><a href="../candidate.html">Candidatos</a></li>
                                 <li><a href="../contact.html">FAQ</a></li>
                             </ul>
-  
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
-                            <h3 class="footer_title">
-                               Categoria
-                            </h3>
+                            <h3 class="footer_title">Categoria</h3>
                             <ul>
-                                <li><a href="../jobs/design.html">Design & Art </a></li>
-                                <li><a href="../jobs/software_enginer.html">Engenharia Software</a></li>
-                                <li><a href="../jobs/marketing.html"> Vendas e marketing</a></li>
-                                <li><a href="../jobs/dev_wordpress.html">Vagas para DEV </a></li>
+                                <li><a href="../jobs/design.html">Design & Art</a></li>
+                                <li><a href="../jobs/software_enginer.html">Engenharia de Software</a></li>
+                                <li><a href="../jobs/marketing.html">Vendas e Marketing</a></li>
+                                <li><a href="../jobs/dev_wordpress.html">Vagas para DEV</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 col-lg-4">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".6s">
-                            <h3 class="footer_title">
-                               Se inscrever
-                            </h3>
+                            <h3 class="footer_title">Se inscrever</h3>
                             <form action="#" class="newsletter_form">
                                 <input type="text" placeholder="Enter your mail">
                                 <button type="submit">Se inscrever</button>
@@ -340,7 +302,8 @@
         </div>
     </footer>
     <!--/ footer end  -->
-    <!-- JS here -->
+
+    <!-- JS aqui -->
     <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="../js/vendor/jquery-1.12.4.min.js"></script>
     <script src="../js/popper.min.js"></script>
@@ -360,17 +323,14 @@
     <script src="../js/plugins.js"></script>
     <script src="../js/gijgo.min.js"></script>
 
-
-
-    <!--contact js-->
+    <!-- JS de contato -->
     <script src="../js/contact.js"></script>
     <script src="../js/jquery.ajaxchimp.min.js"></script>
     <script src="../js/jquery.form.js"></script>
     <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/mail-script.js"></script>
 
-
-    <script src="../js/main.js"></script>    
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

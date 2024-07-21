@@ -4,14 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Job Top - Candidatos</title>
+    <title>Job Top - Contato</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- php code link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-    <!-- CSS aqui -->
+    <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -21,8 +27,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/gijgo.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
-
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
@@ -32,7 +38,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <!-- iniciarOInício-->
+    <!-- header-start -->
     <header>
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">
@@ -52,10 +58,10 @@
                                         <ul id="navigation">
                                             <li><a href="index.html">home</a></li>
                                             <li><a href="jobs.html">Navegue pelo trabalho</a></li>
-                                            <li><a href="#"> páginas <i class="ti-angle-down"></i></a>
+                                            <li><a href="#">Páginas<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="candidate.html">Candidatos </a></li>
-                                                    <li><a href="jobs.html">Vagas de Trabalho </a></li>
+                                                    <li><a href="candidate.html">Candidatos</a></li>
+                                                    <li><a href="jobs.html">Vagas de Trabalho</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">blog <i class="ti-angle-down"></i></a>
@@ -71,7 +77,7 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="phone_num d-none d-xl-block">
-                                        <a href="login.html">Log in</a>
+                                        <a href="../php/cadastro.php">Sair</a>
                                     </div>
                                     <div class="d-none d-lg-block">
                                         <a class="boxed-btn3" href="contact.php">Publicar um emprego</a>
@@ -88,155 +94,107 @@
             </div>
         </div>
     </header>
-    <!-- Cabeçalho-->
+    <!-- header-end -->
 
-    <!-- Bradcam_area -->
+    <!-- bradcam_area  -->
     <div class="bradcam_area bradcam_bg_1">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
-                        <h3>Candidatos</h3>
+                        <h3>contato</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--/ Bradcam_area  -->
-
-    <!-- apresentado_candidates_area_start  -->
-    <div class="featured_candidates_area candidate_page_padding">
+    <!--/ bradcam_area  -->
+    <!-- ================ contact section start ================= // maps not found, api invalid problem-->
+    <section class="contact-section section_padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/1.png" alt="">
-                        </div>
-                        <a href="candidates/markary.html">
-                            <h4>Markary Jondon</h4>
-                        </a>
-                        <p>Engenheiro de software</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/2.png" alt="">
-                        </div>
-                        <a href="candidates/pedro.html">
-                            <h4>Pedro</h4>
-                        </a>
-                        <p>Engenheiro de software</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/3.png" alt="">
-                        </div>
-                        <a href="candidates/mario.html">
-                            <h4>Mario</h4>
-                        </a>
-                        <p>Encanador</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/4.png" alt="">
-                        </div>
-                        <a href="candidates/eren.html">
-                            <h4>Eren Jeager</h4>
-                        </a>
-                        <p>Psicologo pessoal</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
+            <div class="d-none d-sm-block mb-5 pb-4">
+                <!--<div id="map" style="height: 480px;"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var grayStyles = [
+              {
+                featureType: "all",
+                stylers: [
+                  { saturation: -90 },
+                  { lightness: 50 }
+                ]
+              },
+              {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: uluru,
+              zoom: 9,
+              styles: grayStyles,
+              scrollwheel:  false
+            });
+          }
+          
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+        
+      </div>-->
 
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/5.png" alt="">
-                        </div>
-                        <a href="candidates/rose.html">
-                            <h4>Rosé</h4>
-                        </a>
-                        <p> Administradora</p>
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title">Envie sua Solicitacao Para Nossa Central</h2>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/6.png" alt="">
-                        </div>
-                        <a href="candidates/carlos.html">
-                            <h4>Carlos</h4>
-                        </a>
-                        <p>Pedreiro</p>
+                    <div class="container">
+                        <form name="dadosContato" action="crud/conexao.php" method="post">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Nome: </td>
+                                        <td><input type="text" name="nome" value=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email: </td>
+                                        <td><input type="text" name="email" value=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Objetivo: </td>
+                                        <td><input type="text" name="objetivo" value=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="hidden" name="acao" value="inserir"></td>
+                                        <td><input type="submit" name="Enviar" value="Enviar"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/7.png" alt="">
+                    <div class="col-lg-4">
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-home"></i></span>
+                            <div class="media-body">
+                                <h3>Bahia, Brasil.</h3>
+                                <p>Euclides da Cunha, CEP 48500-000</p>
+                            </div>
                         </div>
-                        <a href="candidates/joana.html">
-                            <h4>Joana</h4>
-                        </a>
-                        <p>Tecnico em Design</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/8.png" alt="">
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                            <div class="media-body">
+                                <h3>55 (99) 9999 9999</h3>
+                                <p>Telefone, Entre em contato</p>
+                            </div>
                         </div>
-                        <a href="candidates/jordan.html">
-                            <h4>Jordan</h4>
-                        </a>
-                        <p>Designer</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/9.png" alt="">
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-email"></i></span>
+                            <div class="media-body">
+                                <h3>JOB_TOP1@suporte.com</h3>
+                                <p>Envie sua solicitacao para nossos especialistas!</p>
+                            </div>
                         </div>
-                        <a href="candidates/pedro_ent.html">
-                            <h4>Pedro Ent</h4>
-                        </a>
-                        <p>Dev Front End</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single_candidates text-center">
-                        <div class="thumb">
-                            <img src="img/candiateds/10.png" alt="">
-                        </div>
-                        <a href="candidates/takeshi.html">
-                            <h4>Takeshi</h4>
-                        </a>
-                        <p>Dev Senior</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="pagination_wrap">
-                        <ul>
-                            <li><a href="#"> <i class="ti-angle-left"></i> </a></li>
-                            <li><a href="candidate.html"><span>01</span></a></li>
-                            <li><a href="#"> <i class="ti-angle-right"></i> </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- apresentado_candidates_area_end  -->
-
-
-
+    </section>
+    <!-- ================ contact section end ================= -->
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
@@ -290,7 +248,7 @@
                                 <li><a href="index.html">Sobre </a></li>
                                 <li><a href="jobs.html"> Trabalhos</a></li>
                                 <li><a href="candidate.html">Candidatos/a></li>
-                                <li><a href="contact.html">FAQ</a></li>
+                                <li><a href="contact.php">FAQ</a></li>
                             </ul>
 
                         </div>
@@ -336,8 +294,7 @@
         </div>
     </footer>
     <!--/ footer end  -->
-
-    <!--/ Scripts -->
+    <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>

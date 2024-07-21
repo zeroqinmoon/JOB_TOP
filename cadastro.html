@@ -6,24 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login_config.css">
-    <title>Job Top - Login</title>
+    <title>Job Top - Cadastro</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
 
     <div class="login-card">
-        <h2>Conecte-se</h2>
+        <h2>Cadastro</h2>
         <h3>Digite suas credenciais</h3>
 
-        <form class="login-form" id="loginForm">
-            <input type="text" id="username" placeholder="Username">
-            <input type="password" id="password" placeholder="Password">
-            <a href="lost_password.html" id="forgotPassword">Esqueça sua senha?</a>
-            <a href="lost_password.html" id="forgotPassword">Acesso ao Painel</a>
-            <button type="submit" formaction="index.html" id="loginButton">CONECTE-SE</button>
+        <form class="login-form" id="loginForm" method="POST" action="cadastro.php">
+            <input type="text" id="nome" placeholder="Email" required>
+            <input type="text" id="email" placeholder="Email" required>
+            <input type="password" id="senha" placeholder="Password" required>
+            <a href="login.php" id="forgotPassword">Já é usuario.</a>
+            <button type="submit" value="cadastrar" id="cadastrar" name="cadastrar">
+                CADASTRAR
+            </button>
         </form>
-
+        <!-- Scripts -->
         <script>
             // Função para o evento onFocus (quando o campo recebe o foco)
             document.getElementById('username').addEventListener('focus', function () {
