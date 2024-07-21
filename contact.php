@@ -66,7 +66,7 @@
                                                     <li><a href="blog.html">blog</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contato</a></li>
+                                            <li><a href="contact.php">Contato</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -77,7 +77,7 @@
                                         <a href="login.html">Log in</a>
                                     </div>
                                     <div class="d-none d-lg-block">
-                                        <a class="boxed-btn3" href="contact.html">Publicar um emprego</a>
+                                        <a class="boxed-btn3" href="contact.php">Publicar um emprego</a>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@
                                 <li><a href="index.html">Sobre </a></li>
                                 <li><a href="jobs.html"> Trabalhos</a></li>
                                 <li><a href="candidate.html">Candidatos/a></li>
-                                <li><a href="contact.html">FAQ</a></li>
+                                <li><a href="contact.php">FAQ</a></li>
                             </ul>
 
                         </div>

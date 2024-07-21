@@ -365,6 +365,20 @@
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            var emailError = document.getElementById('emailError');
+            if (!isValidEmail(email)) {
+                emailError.textContent = 'Por favor, insira um endereço de e-mail válido.';
+                return false;
+            }
+            emailError.textContent = '';
+            alert('Pedido de recuperação de senha solicitado para: ' + email);
+            clearField('email');
+            return true; // Impede o envio do formulário
+        }
+    </script>
 </body>
 
 </html>
