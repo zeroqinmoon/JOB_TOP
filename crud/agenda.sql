@@ -75,6 +75,13 @@ email Varchar(30),
 senha Varchar(40),
 Primary Key (ID)) ENGINE = MyISAM;
 
+CREATE TABLE `curriculos` (
+ID Int UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,
+  `nome` varchar(25) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `links` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 -- Indexes for dumped tables
 --
 
