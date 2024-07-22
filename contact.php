@@ -1,3 +1,80 @@
+<?php
+
+// Verifica se o POST existe antes de inserir um novo contato
+if(isset($_POST["acao"])){
+    if ($_POST["acao"]=="inserir"){
+        inserirContato();
+    }
+    if ($_POST["acao"]=="atualizar"){
+        atualizarContato();
+    }
+    if($_POST["acao"]=="excluir"){
+        excluirContato();
+    }
+}
+
+
+function abrirBanco() {
+    $conexao = new mysqli("localhost", "root", "", "agenda");
+    if ($conexao->connect_error) {
+        echo "deu ruim";
+        die("Connection failed: " . $conexao->connect_error);
+    }
+    return $conexao;
+}
+
+function inserirContato() {
+    $banco = abrirBanco();
+    $sql = "INSERT INTO contato(nome, email, objetivo) 
+    VALUES ('{$_POST["nome"]}','{$_POST["email"]}','{$_POST["objetivo"]}')";
+    $banco->query($sql);
+    $banco->close();
+    voltarIndex();
+}
+
+function atualizarContato() {
+    $banco = abrirBanco();
+    $sql = "UPDATE contato SET nome='{$_POST["nome"]}',email='{$_POST["email"]}',objetivo='{$_POST["objetivo"]}' WHERE id='{$_POST["id"]}'";
+    $banco->query($sql);
+    $banco->close();
+    voltarIndex();
+}
+
+function excluirContato() {
+    $banco = abrirBanco();
+    $sql = "DELETE FROM contato WHERE id='{$_POST["id"]}'";
+    $banco->query($sql);
+    $banco->close();
+    voltarIndex();
+}
+
+function selectAllContato() {
+    $banco = abrirBanco();
+    $sql = "SELECT * FROM contato ORDER BY nome";
+    $resultado = $banco->query($sql);
+    $banco->close();
+    
+    while($row = mysqli_fetch_array($resultado)) {
+        $dados[] = $row;
+    }
+    return $dados;
+}
+
+function selectIdContato($id) {
+    $banco = abrirBanco();
+    $sql = "SELECT * FROM contato WHERE id=".$id;
+    $resultado = $banco->query($sql);
+    $banco->close();
+
+    $contato = mysqli_fetch_assoc($resultado);
+    return $contato;
+}
+
+function voltarIndex(){
+    header("Location:contact.php");
+}
+
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -139,20 +216,20 @@
                         <h2 class="contact-title">Envie sua Solicitacao Para Nossa Central</h2>
                     </div>
                     <div class="container">
-                        <form name="dadosContato" action="crud/conexao.php" method="post">
+                        <form name="dadosContato" action="contact.php" method="post">
                             <table class="table">
                                 <tbody>
                                     <tr>
                                         <td>Nome: </td>
-                                        <td><input type="text" name="nome" value="" required></td>
+                                        <td><input type="text" name="nome" value=""></td>
                                     </tr>
                                     <tr>
                                         <td>Email: </td>
-                                        <td><input type="text" name="email" value="" required></td>
+                                        <td><input type="text" name="email" value=""></td>
                                     </tr>
                                     <tr>
                                         <td>Links/Objetivo: </td>
-                                        <td><input type="text" name="objetivo" value="" required></td>
+                                        <td><input type="text" name="objetivo" value=""></td>
                                     </tr>
                                     <tr>
                                         <td><input type="hidden" name="acao" value="inserir"></td>
