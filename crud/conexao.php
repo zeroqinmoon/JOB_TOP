@@ -70,59 +70,6 @@ function selectIdContato($id) {
     return $contato;
 }
 
-
-
-
-
-
-
-
-function inserirCurriculos() {
-    $banco = abrirBanco();
-    $sql = "INSERT INTO curriculos(nome, email, links) 
-    VALUES ('{$_POST["nome"]}','{$_POST["email"]}','{$_POST["links"]}')";
-    $banco->query($sql);
-    $banco->close();
-    voltarIndex();
-}
-
-function atualizarCurriculos() {
-    $banco = abrirBanco();
-    $sql = "UPDATE curriculos SET nome='{$_POST["nome"]}',email='{$_POST["email"]}',links='{$_POST["links"]}' WHERE id='{$_POST["id"]}'";
-    $banco->query($sql);
-    $banco->close();
-    voltarIndex();
-}
-
-function excluirCurriculos() {
-    $banco = abrirBanco();
-    $sql = "DELETE FROM curriculos WHERE id='{$_POST["id"]}'";
-    $banco->query($sql);
-    $banco->close();
-    voltarIndex();
-}
-
-function selectAllCurriculos() {
-    $banco = abrirBanco();
-    $sql = "SELECT * FROM curriculos ORDER BY nome";
-    $resultado = $banco->query($sql);
-    $banco->close();
-    
-    while($row = mysqli_fetch_array($resultado)) {
-        $dados[] = $row;
-    }
-    return $dados;
-}
-
-function selectIdCurriculos($id) {
-    $banco = abrirBanco();
-    $sql = "SELECT * FROM curriculos WHERE id=".$id;
-    $resultado = $banco->query($sql);
-    $banco->close();
-
-    $curriculos = mysqli_fetch_assoc($resultado);
-    return $curriculos;
-}
 function voltarIndex(){
     header("Location:index.php");
 }

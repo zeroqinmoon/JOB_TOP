@@ -144,15 +144,15 @@
                                 <tbody>
                                     <tr>
                                         <td>Nome: </td>
-                                        <td><input type="text" name="nome" value=""></td>
+                                        <td><input type="text" name="nome" value="" required></td>
                                     </tr>
                                     <tr>
                                         <td>Email: </td>
-                                        <td><input type="text" name="email" value=""></td>
+                                        <td><input type="text" name="email" value="" required></td>
                                     </tr>
                                     <tr>
-                                        <td>Objetivo: </td>
-                                        <td><input type="text" name="objetivo" value=""></td>
+                                        <td>Links/Objetivo: </td>
+                                        <td><input type="text" name="objetivo" value="" required></td>
                                     </tr>
                                     <tr>
                                         <td><input type="hidden" name="acao" value="inserir"></td>

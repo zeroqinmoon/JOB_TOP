@@ -33,7 +33,7 @@ CREATE TABLE `contato` (
   `id` int(11) NOT NULL,
   `nome` varchar(25) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `objetivo` varchar(50) NOT NULL
+  `objetivo` varchar(99) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -68,19 +68,12 @@ INSERT INTO `admins` (`nome`, `email`,`senha`) VALUES
 ('Rodrigo', 'tester123@gmail.com', '123456789');
 -- ----------------------------------------------------
 --
-Create table usuarios (
+Create table `usuarios` (
 ID Int UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,
 nome Varchar(30),
 email Varchar(30),
 senha Varchar(40),
 Primary Key (ID)) ENGINE = MyISAM;
-
-CREATE TABLE `curriculos` (
-ID Int UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,
-  `nome` varchar(25) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `links` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Indexes for dumped tables
 --
