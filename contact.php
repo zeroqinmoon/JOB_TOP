@@ -121,7 +121,7 @@ function voltarIndex(){
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="user/index.html">
                                         <img src="img/logo.png" alt="">
                                     </a>
                                 </div>
@@ -130,17 +130,17 @@ function voltarIndex(){
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.html">home</a></li>
-                                            <li><a href="jobs.html">Navegue pelo trabalho</a></li>
+                                            <li><a href="user/index.html">home</a></li>
+                                            <li><a href="user/jobs.html">Navegue pelo trabalho</a></li>
                                             <li><a href="#">Páginas<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="candidate.html">Candidatos</a></li>
-                                                    <li><a href="jobs.html">Vagas de Trabalho</a></li>
+                                                    <li><a href="user/candidate.html">Candidatos</a></li>
+                                                    <li><a href="user/jobs.html">Vagas de Trabalho</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">blog <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
+                                                    <li><a href="user/blog.html">blog</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.php">Contato</a></li>
@@ -274,7 +274,7 @@ function voltarIndex(){
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                             <div class="footer_logo">
-                                <a href="index.html">
+                                <a href="user/index.html">
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
@@ -316,9 +316,9 @@ function voltarIndex(){
                                 Empresa
                             </h3>
                             <ul>
-                                <li><a href="index.html">Sobre </a></li>
-                                <li><a href="jobs.html"> Trabalhos</a></li>
-                                <li><a href="candidate.html">Candidatos/a></li>
+                                <li><a href="user/index.html">Sobre </a></li>
+                                <li><a href="user/jobs.html"> Trabalhos</a></li>
+                                <li><a href="user/candidate.html">Candidatos/a></li>
                                 <li><a href="contact.php">FAQ</a></li>
                             </ul>
 
